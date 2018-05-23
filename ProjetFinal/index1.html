@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Nicolas Lemay - Accueil</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="media/navbar-logo.png" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Formulaire</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index4.html">Page Libre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index5.html">Jeu</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="mainCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Sert pour afficher les bulles sous l’images -->
+        <ul class="carousel-indicators">
+            <li data-target="#maincarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#maincarousel" data-slide-to="1"></li>
+            <li data-target="#maincarousel" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="media/ben_kenobi.jpg" alt='Obi-Wan "Ben" Kenobi'>
+                <div class="carousel-caption">
+                    <h3>Obi-Wan "Ben" Kenobi</h3>
+                    <p>Ancien maître Jedi, il a été le mentor de Anakin Skywalker et de Luke Skywalker.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="media/luke_skywalker.jpg" alt="Luke Skywalker">
+                <div class="carousel-caption">
+                    <h3>Luke Skywalker</h3>
+                    <p>Fils d'Anakin Skywalker, il a un don avec la Force. Il est aussi un très bon pilote.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="media/darth_vader.jpg" alt="Darth Vader">
+                <div class="carousel-caption">
+                    <h3>Darth Vader</h3>
+                    <p>Formellement Anakin Skywalker, cet homme, maintenant plus machine qu'humain, utilise son amour du côté obscur afin de régner sur la Galaxie.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#mainCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="container-fluid no-gutters">
+        <div class="row justify-content-center opacite-50">
+            <div class="col-lg-5 col-sm-12" id="carteInfo">
+                <h1 class="text-center">Un Univers prêt de chez vous</h1>
+                <div class="ml-5">
+                    <p>Adresse: 475 Notre-Dame St E<br>Victoriaville, QC G6P 4B3<br>Canada</p>
+                    <p>Téléphone: 819 740-7299</p>
+                    <p>Courriel: lemay.nicolas@carrefour.cegepvicto.ca</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12" id="carte"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <div class="row" id="question">
+                    <div class="col-lg-6 col-sm-12 opacite-50" id="lumiere">
+                        <h1 class="fg-blanc">La Lumière</h1>
+                        <p class="fg-blanc">Le côté de la force aligné avec l'honnêteté, la compassion, la pitié, le sacrifice de soi, et d'autres émotions positives.</p>
+                        <a class="btn btn-primary align-bottom" href="#" role="button">En savoir plus</a>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 opacite-50" id="obscur">
+                        <h1 class="fg-rouge">Le Côté Obscur</h1>
+                        <p class="fg-rouge">Le côté de la force qui tire son pouvoir à partir d'émotions pures et sentiments comme la colère, la haine, l'avidité, la jalousie, la peur, l'agression, la folie des grandeurs et la passion sans retenue.</p>
+                        <a class="btn btn-danger align-bottom" href="#" role="button">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h6>Lucasfilm Ltd. Tous droits réservés.</h6>
+    </footer>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAro6Tf4GBdv5v81zBeRomK9miQvWBu_1I&callback=fonctionCarte"></script>
+</body>
+</html>

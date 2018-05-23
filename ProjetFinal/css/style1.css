@@ -1,0 +1,124 @@
+footer{
+    background-color: white;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+#carte{
+    height: 400px;
+    width: auto;
+    position: center;
+}
+
+.opacite-50{
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.opacite-50:hover{
+    opacity: 1.0;
+}
+
+#carteInfo{
+    background-color: #000000;
+}
+#carteInfo h1, p{
+    color: white;
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+}
+
+.carousel-item img{
+    margin: auto;
+    height: 800px;
+    width: auto;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 20%;
+    height: 180%;
+}
+
+#question div{
+    background-size: cover;
+}
+
+.fg-blanc{
+    color: white;
+}
+.fg-rouge{
+    color: red;
+}
+
+#lumiere{
+    background-image: url("../media/light.jpg");
+}
+#obscur{
+    background-image: url("../media/dark.jpg");
+}
+
+.img-fluid{
+    height: 100%;
+    width: 100%;
+}
+
+#portfolio div{
+    padding: 0;
+}
+
+.form-group label{
+    color: white;
+}
+
+#bottom{
+    margin-bottom: 200px;
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-image: url('../media/bg.jpg');
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    body{
+        background-image: url('../media/bg-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #question{
+        height: 300px;
+    }
+
+    #carteInfo h1, #carteInfo p{
+        color: blue;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #question{
+        height: 600px;
+    }
+
+    #carteInfo h1, #carteInfo p{
+        color: yellow;
+    }
+}
+
+@media print {
+    nav, footer, head {
+        display: none;
+    }
+    body{
+        background-image: none;
+    }
+}
