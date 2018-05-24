@@ -1,5 +1,9 @@
 var app = new PIXI.Application(800, 600, { backgroundColor: 0x1099bb });
 document.body.appendChild(app.view);
+app.view.style.position = 'absolute';
+app.view.style.left = '50%';
+app.view.style.top = '50%';
+
 
 // Scale mode for all textures, will retain pixelation
 PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
